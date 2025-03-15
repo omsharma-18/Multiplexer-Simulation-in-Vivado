@@ -105,7 +105,7 @@ module mux4_to_1_behavioral (i,s,out);
 input [4:1]i;
 input [1:0]s;
 output out;
-always@(i,s,out)
+always @(i,s,out)
 begin
 if(s[1]==0 & s[0]==0)
     out=i[1];
